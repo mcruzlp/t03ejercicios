@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 04</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Introduce tu nombre aquí: </ion-label>
+    <ion-input [(ngModel)]="inputName"></ion-input>
+  </ion-item>
+  <ion-button (click)="saluda(muestraNombre(true))">SALUDA</ion-button>
+  <ng-container *ngIf="value == true">
+    <h1>Hola, {{ name }}</h1>
+  </ng-container>
+</ion-content>

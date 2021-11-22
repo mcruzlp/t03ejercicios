@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 03</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="ion-text-center">
+  <ion-button (click)="decrementValue()">-</ion-button>
+  <ion-button (click)="incrementValue()">+</ion-button>
+
+  <h1>
+    <ng-container>
+      {{n}}
+    </ng-container>
+  </h1>
+
+  <ion-button (click)="ngOnInit()">RESET</ion-button>
+
+</ion-content>

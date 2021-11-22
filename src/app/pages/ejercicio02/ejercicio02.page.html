@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 02</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="muestraNombre(value)">
+    <ng-container *ngIf="value == false">
+      MUESTRA NOMBRE
+    </ng-container>
+    <ng-container *ngIf="value == true">
+      LIMPIA PANTALLA
+    </ng-container>
+  </ion-button>
+
+  <h1>
+    <ng-container *ngIf="value == true">
+      Cruz López Pérez
+    </ng-container>
+
+    <ng-container *ngIf="value == false">
+      
+    </ng-container>
+  </h1>
+
+</ion-content>

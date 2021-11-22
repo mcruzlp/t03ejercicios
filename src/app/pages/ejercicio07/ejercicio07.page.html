@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 07</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Pesetas: </ion-label>
+    <ion-input [(ngModel)]="inputPtas" (keyup)="conviertePtas()"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Euros: </ion-label>
+    <ion-input [(ngModel)]="inputEuros" (keyup)="convierteEuros()"></ion-input>
+  </ion-item>
+</ion-content>

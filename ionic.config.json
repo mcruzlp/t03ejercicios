@@ -1,0 +1,7 @@
+{
+  "name": "ej03InterpolatioPipesEvents",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
